@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Pepe</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 6em;
+    color: #fff;
+    animation: crazyAnimation 1s infinite;
+    cursor: pointer;
+  }
+
+  @keyframes crazyAnimation {
+    0% {
+      transform: rotate(0deg) scale(1);
+      color: #ff0000;
+    }
+    25% {
+      transform: rotate(-10deg) scale(1.1);
+      color: #00ff00;
+    }
+    50% {
+      transform: rotate(10deg) scale(1.2);
+      color: #0000ff;
+    }
+    75% {
+      transform: rotate(-5deg) scale(1.1);
+      color: #ff00ff;
+    }
+    100% {
+      transform: rotate(5deg) scale(1);
+      color: #ffff00;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1 onclick="window.location.href='./elpepe.jpg'">EL PEPE</h1>
+</div>
+</body>
+</html>
